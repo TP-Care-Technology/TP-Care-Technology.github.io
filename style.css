@@ -64,7 +64,7 @@ h2 { font-size: clamp(2rem, 3.3vw, 2.7rem); font-weight: 600; line-height: 1.2; 
 .service-card { display: flex; flex-direction: column; padding: 30px; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
 .service-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
 .service-number { font-size: .75rem; font-weight: 600; letter-spacing: .08em; }
-.service-symbol { display: block; width: 32px; height: 32px; color: var(--primary); font-family: monospace; font-size: 1.4rem; line-height: 32px; }
+.service-symbol { display: block; width: 32px; height: 32px; color: var(--primary); }
 .service-card h3 { font-size: 1.5rem; line-height: 1.25; font-weight: 600; letter-spacing: -.025em; margin-bottom: 18px; }
 .service-card > p:not(.service-detail) { font-size: .94rem; margin-bottom: 28px; }
 .service-card .service-detail { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--border); color: var(--navy); font-size: .75rem; font-weight: 600; }

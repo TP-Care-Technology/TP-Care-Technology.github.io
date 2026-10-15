@@ -2,15 +2,17 @@
 
 ## Project Structure & Module Organization
 
-This repository is a single-page static website. `index.html` contains the page content and inline SVG illustrations; `style.css` contains all layout, color, and responsive rules. Store image assets in `assets/` and reference them with relative paths, as the logo does (`assets/TPCT-logo.png`). `README.md` covers setup and project files. There is currently no JavaScript, build configuration, or test directory.
+This is a single-page static website. `index.html` contains content and inline SVG illustrations; `style.css` contains the theme, layout, and responsive rules. Store images in `assets/` and reference them with relative paths, as with `assets/TPCT-logo.png`. `README.md` covers setup. There is no JavaScript, build configuration, or test directory.
 
 ## Build, Test, and Development Commands
 
-No install or build step is required. Open `index.html` in a browser for a quick preview, or run `python3 -m http.server 8000` from the repository root and visit `http://localhost:8000/`. The local server makes relative asset paths behave like they will on a static host. Run `git diff --check` before committing to catch whitespace errors. There is no configured `npm test`, linter, or formatter command.
+No install or build step is required. Open `index.html` in a browser, or run `python3 -m http.server 8000` from the repository root and visit `http://localhost:8000/`. Run `git diff --check` before committing. There is no configured test, lint, or format command.
 
 ## Coding Style & Naming Conventions
 
-Follow the existing four-space indentation in HTML and CSS. Use semantic HTML elements, descriptive `id` values for section anchors, and lowercase kebab-case class names such as `service-card` and `hero-description`. Keep CSS custom properties for shared colors and dimensions in `:root`. Add component styles near the related section comment and responsive overrides in the existing media-query blocks. Preserve useful accessibility attributes, visible keyboard focus, the skip link, and reduced-motion behavior when changing the page.
+Follow the existing four-space indentation in HTML and CSS. Use semantic HTML elements, descriptive `id` values for section anchors, and lowercase kebab-case class names such as `service-card` and `hero-description`. Keep responsive overrides in the existing media-query blocks. Preserve accessibility attributes, visible keyboard focus, the skip link, and reduced-motion behavior.
+
+Define a semantic theme in `:root` before implementing UI. Reuse its design tokens and shared styles, including `.button`, throughout the site. Do not hardcode colors, font sizes, font families, spacing, border radii, or other visual styles in individual components. Do not invent visual values when an existing token or shared component fits. If a project has no theme, ask the user to define its color scheme and required tokens before implementing UI. Keep the theme consistent across the application. Use Title Case for action button labels, such as `Save Changes`.
 
 Use plain punctuation in all repository text. Do not use em dashes, en dashes, or emoji in documentation, interface copy, commit messages, or pull request descriptions.
 

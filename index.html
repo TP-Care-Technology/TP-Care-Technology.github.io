@@ -6,7 +6,7 @@
     <meta name="description" content="TP Care Technology builds practical software, IT solutions, and healthcare technology to simplify operations and help organizations work better.">
     <meta name="theme-color" content="#09376b">
     <title>TP Care Technology | Software &amp; IT Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <link rel="icon" href="assets/favicon.ico" sizes="any">
 </head>
 <body id="top">
@@ -41,29 +41,29 @@
                         </div>
                     </div>
                     <div class="hero-art" aria-hidden="true">
-                        <svg viewBox="0 0 400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient id="tile-gradient" x1="106" y1="100" x2="298" y2="310" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#0b5cab"/>
-                                    <stop offset="1" stop-color="#00b5c9"/>
+                                    <stop class="art-gradient-start"/>
+                                    <stop class="art-gradient-end" offset="1"/>
                                 </linearGradient>
                                 <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
-                                    <circle cx="2" cy="2" r="1" fill="#b8d2e2"/>
+                                    <circle class="art-pattern-dot" cx="2" cy="2" r="1"/>
                                 </pattern>
                             </defs>
                             <rect x="10" y="10" width="380" height="400" fill="url(#dot-grid)"/>
-                            <path d="M62 150V72H200M200 348H338V270" stroke="#c4dce9" stroke-width="1.5"/>
-                            <path d="M200 38 372 210 200 382 28 210Z" stroke="#c4dce9" stroke-width="1.5"/>
-                            <rect x="92" y="102" width="216" height="216" rx="32" fill="#e1f0f6" transform="rotate(-12 200 210)"/>
-                            <rect x="104" y="114" width="192" height="192" rx="28" fill="url(#tile-gradient)"/>
-                            <path d="M153 210H247M200 163V257" stroke="white" stroke-width="2" opacity=".5"/>
-                            <rect x="142" y="152" width="42" height="42" rx="9" fill="white"/>
-                            <rect x="216" y="152" width="42" height="42" rx="9" fill="white" fill-opacity=".3" stroke="white"/>
-                            <rect x="142" y="226" width="42" height="42" rx="9" fill="white" fill-opacity=".3" stroke="white"/>
-                            <rect x="216" y="226" width="42" height="42" rx="9" fill="white"/>
-                            <circle cx="200" cy="38" r="6" fill="#0b5cab"/>
-                            <circle cx="338" cy="270" r="6" fill="#00a0b5"/>
-                            <circle cx="62" cy="150" r="6" fill="white" stroke="#0b5cab" stroke-width="2"/>
+                            <path class="art-guide" d="M62 150V72H200M200 348H338V270"/>
+                            <path class="art-guide" d="M200 38 372 210 200 382 28 210Z"/>
+                            <rect class="art-tile-shadow" x="92" y="102" width="216" height="216" transform="rotate(-12 200 210)"/>
+                            <rect class="art-tile-face" x="104" y="114" width="192" height="192" fill="url(#tile-gradient)"/>
+                            <path class="art-white-stroke art-strong-stroke art-half-opacity" d="M153 210H247M200 163V257"/>
+                            <rect class="art-white-fill art-tile-cell" x="142" y="152" width="42" height="42"/>
+                            <rect class="art-white-fill art-tile-cell art-muted-fill art-white-stroke" x="216" y="152" width="42" height="42"/>
+                            <rect class="art-white-fill art-tile-cell art-muted-fill art-white-stroke" x="142" y="226" width="42" height="42"/>
+                            <rect class="art-white-fill art-tile-cell" x="216" y="226" width="42" height="42"/>
+                            <circle class="art-brand-fill" cx="200" cy="38" r="6"/>
+                            <circle class="art-accent-dot" cx="338" cy="270" r="6"/>
+                            <circle class="art-white-fill art-brand-stroke art-strong-stroke" cx="62" cy="150" r="6"/>
                         </svg>
                     </div>
                 </div>
@@ -85,19 +85,19 @@
                 </div>
                 <div class="service-grid">
                     <article class="service-card">
-                        <div class="service-top"><span class="service-number">01 /</span><svg class="service-symbol" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 9-7 7 7 7m10-14 7 7-7 7M19 5l-6 22"/></svg></div>
+                        <div class="service-top"><span class="service-number">01 /</span><svg class="service-symbol service-symbol-code" viewBox="0 0 32 32" aria-hidden="true"><path d="m11 9-7 7 7 7m10-14 7 7-7 7M19 5l-6 22"/></svg></div>
                         <h3>Software<br> Development</h3>
                         <p>Web applications and software systems that simplify workflows, reduce friction, and help your team get work done.</p>
                         <p class="service-detail">Web applications &amp; business systems</p>
                     </article>
                     <article class="service-card">
-                        <div class="service-top"><span class="service-number">02 /</span><svg class="service-symbol" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="4" width="22" height="9" rx="2"/><rect x="5" y="19" width="22" height="9" rx="2"/><path d="M16 13v6M9 8.5h3M9 23.5h3"/></svg></div>
+                        <div class="service-top"><span class="service-number">02 /</span><svg class="service-symbol" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="4" width="22" height="9"/><rect x="5" y="19" width="22" height="9"/><path d="M16 13v6M9 8.5h3M9 23.5h3"/></svg></div>
                         <h3>IT<br> Solutions</h3>
                         <p>Technology and infrastructure designed to support secure, efficient operations and keep your organization working smoothly.</p>
                         <p class="service-detail">Technology &amp; infrastructure</p>
                     </article>
                     <article class="service-card">
-                        <div class="service-top"><span class="service-number">03 /</span><svg class="service-symbol" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4h8v8h8v8h-8v8h-8v-8H4v-8h8Z"/></svg></div>
+                        <div class="service-top"><span class="service-number">03 /</span><svg class="service-symbol" viewBox="0 0 32 32" aria-hidden="true"><path d="M12 4h8v8h8v8h-8v8h-8v-8H4v-8h8Z"/></svg></div>
                         <h3>Healthcare<br> Technology</h3>
                         <p>Digital solutions shaped by healthcare’s operational needs, helping organizations improve efficiency and deliver better services.</p>
                         <p class="service-detail">Healthcare workflows &amp; operations</p>

@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This is a single-page static website. `index.html` contains content and inline SVG illustrations; `style.css` contains the theme, layout, and responsive rules. Store images in `assets/` and reference them with relative paths, as with `assets/TPCT-logo.png`. `README.md` covers setup. There is no JavaScript, build configuration, or test directory.
+This is a single-page static website. `index.html` contains content and inline SVG illustrations; `style.css` contains the theme, layout, and responsive rules. Store images in `assets/` and reference them with relative paths, as with `assets/TPCT-logo.png`. `README.md` covers setup, and `CHANGELOG.md` records notable changes. There is no JavaScript, build configuration, or test directory.
 
 ## Build, Test, and Development Commands
 
@@ -23,3 +23,7 @@ There is no automated test framework or coverage target. For visual or content c
 ## Commit & Pull Request Guidelines
 
 Recent commits use short, imperative, sentence-style summaries (for example, `Refine organization webpage design and business messaging` and `fix header title`). Keep each commit focused on one change. In pull requests, describe the user-visible result, list manual checks performed, and include before/after screenshots for layout or styling changes. Link a related issue when one exists.
+
+Follow the Keep a Changelog 1.1.0 format in `CHANGELOG.md`. Record each notable visitor-facing change under `## [Unreleased]` while working on `dev`. Use the relevant Added, Changed, Deprecated, Removed, Fixed, or Security heading; omit empty categories and routine internal edits. Describe completed changes rather than planned setup.
+
+When changes are merged into `main` and published, move the released entries into a version heading with the publication date in `YYYY-MM-DD` format, and keep an empty `## [Unreleased]` heading above it. Start with version `0.1.0`, use Semantic Versioning for later releases, and tag each release with a matching `v` prefix such as `v0.1.0`. Add comparison links to the changelog when the first version is published.

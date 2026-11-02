@@ -15,6 +15,7 @@ Open `http://localhost:8000/` in a browser. You can also open `index.html` direc
 ## Project files
 
 - `index.html`: page content, navigation, and inline SVG artwork.
+- `404.html`: custom not-found page for GitHub Pages.
 - `style.css`: visual styles and responsive layouts.
 - `assets/TPCT-logo.png`: site logo.
 - `AGENTS.md`: contributor guidelines.

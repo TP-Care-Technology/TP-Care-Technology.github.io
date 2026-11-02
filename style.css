@@ -224,6 +224,11 @@ h2 { font-size: var(--font-size-section-heading); font-weight: var(--font-weight
 .principle dd { margin: var(--space-8px) 0 0 var(--space-38px); font-size: var(--font-size-0-92rem); }
 
 /* Contact and footer */
+.not-found { padding-block: var(--space-100px); background: var(--color-hero-start); }
+.not-found .hero-description { max-width: var(--size-550px); }
+.not-found-help { margin-top: var(--space-40px); }
+.not-found-help a { color: var(--color-action); text-decoration: underline; text-underline-offset: var(--space-4px); }
+.not-found-help a:hover { color: var(--color-action-hover); }
 .contact-panel { display: flex; align-items: center; justify-content: space-between; gap: var(--space-50px); padding: var(--space-60px); background: var(--color-brand); border-radius: var(--radius-10px); }
 .contact-content { max-width: var(--size-590px); }
 .contact .eyebrow { color: var(--color-contact-accent); margin-bottom: var(--space-18px); }
@@ -254,6 +259,7 @@ h2 { font-size: var(--font-size-section-heading); font-weight: var(--font-weight
 }
 
 @media (max-width: 760px) {
+    .not-found { padding-block: var(--space-68px); }
     .section { padding-block: var(--space-68px); }
     .hero { padding-top: var(--space-54px); }
     .hero-grid { grid-template-columns: 1fr; }
